@@ -21,9 +21,12 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/WikiService.php");
             
                 <div class="bg-gray-100 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between">
                 <nav class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminWikis.php">
-          Wikie
-        </a>
+                <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminIndex.php">
+                    Home
+                    </a>
+                            <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminWikis.php">
+                    Wikie
+                    </a>
         <!-- Active: bg-gray-800 text-white, Not active: text-white/50 -->
         <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover"  href="../view/adminCategory.php">
           Category
@@ -56,8 +59,18 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/WikiService.php");
       <div class="flex justify-between items-center">
       <h3 class="text-3xl font-extralight text-gray-800">Wikis</h3>  
         </div>
-
+        <!-- <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" class="w-full text-sm border border-solid px-4 py-3 rounded-md outline-grey-600 placeholder="Search" />
+                    </form>
+                </section> -->
             </div>
+            <div class="">
+            <form method="post" action="#">
+                        <input type="text" id="search" name="query" id="query" class="w-full text-sm border border-solid px-4 py-3 rounded-md outline-grey-600" placeholder="Search" />
+                    </form>
+         
+        </div>
             
             </div>
             

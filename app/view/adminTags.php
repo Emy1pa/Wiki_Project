@@ -22,7 +22,10 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/TagService.php");
     <!-- Navigation -->
     <div class="bg-gray-100 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between">
       <nav class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminWikis.php">
+      <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminIndex.php">
+          Home
+        </a>
+      <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminWikis.php">
           Wikie
         </a>
         <!-- Active: bg-gray-800 text-white, Not active: text-white/50 -->

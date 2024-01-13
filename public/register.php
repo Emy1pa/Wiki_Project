@@ -19,12 +19,12 @@ unset($_SESSION['nameRole']);
 <div class="bg-gray-100 flex justify-center items-center h-screen">
     <!-- Left: Image -->
 <div class="w-1/2 h-screen hidden lg:block">
-  <img src="images/wiki6.jpeg" alt="Placeholder Image" class="object-cover w-full h-full">
+  <img src="images/wiki3.jpg" alt="Placeholder Image" class="object-cover w-full h-full">
 </div>
         <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
             <form id="registerForm"action="index.php?action=process_registration" method="post"> 
                  <div class="mb-10">
-                        <h3 class="text-3xl font-extrabold text-sky-600 text-center">Sign Up</h3>
+                        <h3 class="text-3xl font-extrabold">Sign Up</h3>
                     </div>
 <!-- 
         Formulaire d'inscription --> 
@@ -37,10 +37,13 @@ unset($_SESSION['nameRole']);
 
             <label for="password" class="block mt-4 text-sm font-medium text-gray-700">Password</label>
             <input type="password" name="password" id="password" class="mt-1 p-2 w-full border rounded-md" placeholder="Enter password ">
+
+            <label for="confirm password" class="block mt-4 text-sm font-medium text-gray-700">Confirm Password</label>
+            <input type="password" name="password" id="password" class="mt-1 p-2 w-full border rounded-md" placeholder="Enter password ">
 <br><br>
              <!-- Ajoutez d'autres champs d'inscription ici si nécessaire  -->
-             <button type="submit" class="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-sky-600 hover:bg-sky-700 focus:outline-none">Register</button>
-             <p class="text-sm mt-6 text-center">you already have an account <a href="login.php" class="text-sky-700 font-semibold hover:underline ml-1 whitespace-nowrap">login</a></p>
+             <button type="submit" class="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-black hover:bg-gray-700 focus:outline-none">Register</button>
+             <p class="text-sm mt-6 text-center">you already have an account <a href="login.php" class="text-gray-600 font-semibold hover:underline ml-1 whitespace-nowrap">login</a></p>
         </form>
     </div>
  
