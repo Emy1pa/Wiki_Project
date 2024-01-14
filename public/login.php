@@ -1,59 +1,63 @@
 <?php
 session_start();
-unset($_SESSION['user_id']);
-unset($_SESSION['username']);
-unset($_SESSION['nameRole']);
+// unset($_SESSION['user_id']);
+// unset($_SESSION['username']);
+// unset($_SESSION['nameRole']);
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>wikie </title>
+    <title>Login </title>
     
-
+</head>
 <body>
+<section >
 <div class="bg-gray-100 flex justify-center items-center h-screen">
-        <!-- Left: Image -->
-    <div class="w-1/2 h-screen hidden lg:block">
-    <img src="images/wiki2.jpg" alt="Placeholder Image" class="object-cover w-full h-full">
+<div class="w-1/2 h-screen hidden lg:block">
+    <img src="images/wikie.jpg" alt="Placeholder Image" class="object-cover w-full h-full">
     </div>
-        <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
-        <form action="index.php?action=process_login" method="post"> 
-                    
-                    <div class="mb-10">
-                        <h3 class="text-3xl font-extrabold">Login</h3>
+    <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
+        <!-- <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen"> -->
+           
+
+            <!-- <div class="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700"> -->
+                <!-- <div class="p-6 space-y-4 md:space-y-6 sm:p-8"> -->
+                <div class="mb-10">
+                        <h3 class="text-3xl font-extrabold text-center text-sky-600">LOGIN</h3>
                     </div> 
-                    <div>
-                        <label class="text-sm mb-2 block">User name</label>
-                        <div class="relative flex items-center">
-                            <input name="name" id="userLogin" type="text"  class="w-full text-sm border border-solid px-4 py-3 rounded-md outline-gray-600" placeholder="Enter username" />
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-4" viewBox="0 0 24 24">
-                                <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
-                                <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
-                            </svg>
-                        </div>
-                        <p id="errormessage2" class="hidden text-red-500">invalid E-mail</p>
+                    <form class="space-y-4 md:space-y-6" action="/wikie/app/controller/auth.php" method="post">
 
-                    </div>
-                    <div class="mt-6">
-                        <label class="text-sm mb-2 block">Password</label>
-                        <div class="relative flex items-center">
-                            <input name="password" type="password"  class="w-full text-sm border border-gray-300 px-4 py-3 rounded-md outline-gray-600" placeholder="Enter password" />
-                            
+                        <div>
+                            <label for="username" class="text-sm mb-2 block">username</label>
+                            <input id="username" type="username" name="username"
+                                class="w-full text-sm border border-solid px-4 py-3 rounded-md outline-gray-600"
+                                placeholder="username">
                         </div>
-                    </div>
-
-                    <div class="mt-10">
-                        <button type="submit" name="login" class="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-black hover:bg-gray-700 focus:outline-none">
-                            Log in
-                        </button>
-                    </div>
-                    <p class="text-sm mt-6 text-center">Don't have an account <a href="register.php" class="text-gray-600 font-semibold hover:underline ml-1 whitespace-nowrap">Register here</a></p>
-                </form>
+                        <div>
+                            <label for="password" class="text-sm mb-2 block">Password</label>
+                            <input id="password" type="password" name="password" placeholder="***********"
+                            class="w-full text-sm border border-solid px-4 py-3 rounded-md outline-gray-600">
+                        </div>
+                        <button name="login" type="submit"
+                            class="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-sky-600 hover:bg-sky-800 focus:outline-none">log
+                            in</button>
+                        <P class="text-sm mt-6 text-center">
+                            You don't have an account ?
+                    <a class="text-sky-700 font-semibold hover:underline ml-1 whitespace-nowrap" href="register.php">Register</a></p>
+                    </form>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
+</section>
+<script src="/wikie/public/js/regexLogin.js"></script>
 </body>
 
 </html>

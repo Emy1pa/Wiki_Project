@@ -1,4 +1,6 @@
-<?php
+
+
+    <?php
 require_once("../model/User.php");
 require_once("../service/UserService.php");
 
@@ -41,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 exit();
             }
         } else {
-            // Handle invalid login
+            
             echo "<script>
                     setTimeout(function() {
                         window.location.href = '/wikie/public/login.php?error=Invalid username or password';
@@ -87,3 +89,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location:/wikie/public/login.php");
         exit();
     }
+

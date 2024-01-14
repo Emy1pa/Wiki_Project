@@ -15,38 +15,38 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/CategoryService.php
 
 </head>
 
-<body class="bg-blue-100 min-h-screen flex items-center justify-center">
+<body class="bg-gradient-to-r from-blue-800 to-indigo-900 min-h-screen flex items-center justify-center">
    
                
   <div class="bg-white flex-1 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-10 max-w-6xl sm:p-6 sm:my-2 sm:mx-4 sm:rounded-2xl">
     <!-- Navigation -->
-    <div class="bg-gray-100 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between">
+    <div class="bg-blue-800 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between">
       <nav class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
-      <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminIndex.php">
+      <a class="text-white p-4 inline-flex justify-center" href="../view/adminIndex.php">
           Home
         </a>
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminWikis.php">
+        <a class="text-white p-4 inline-flex justify-center" href="../view/adminWikis.php">
           Wikie
         </a>
         <!-- Active: bg-gray-800 text-white, Not active: text-white/50 -->
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover"  href="../view/adminCategory.php">
+        <a class="text-white p-4 inline-flex justify-center"  href="../view/adminCategory.php">
           Category
         </a>
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../view/adminTags.php">
+        <a class="text-white p-4 inline-flex justify-center" href="../view/adminTags.php">
           Tags
         </a>
       </nav>
       <div class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
       <button>
                     <a href="../view/archivedwikis.php">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-gray-500" aria-hidden="true"
+                        <svg class="w-6 h-6 text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
                                 d="M8 8v1h4V8m4 7H4a1 1 0 0 1-1-1V5h14v9a1 1 0 0 1-1 1ZM2 1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
                         </svg></a>
                 </button>
                 
-        <a class="text-gray-500 p-4 inline-flex justify-center rounded-md hover:bg-gray-200 hover:text-gray-800 smooth-hover" href="../public/login.php">
+        <a class="text-white p-4 inline-flex justify-center " href=" /wikie/public/login.php">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
           </svg>
@@ -78,14 +78,14 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/CategoryService.php
                     $categoryService = new CategoryService;
                     $categories = $categoryService->display();
                     foreach ($categories as $categorie): ?>
-                   <div class="flex-1  p-4  min-w-md max-w-md">
+                   <div class="flex-1 p-4  min-w-md max-w-md">
                             <div class="mt-8">
                                 <div class="flex flex-wrap space-x-0 space-y-2 md:space-x-4 md:space-y-0">
-                                    <div class="relative group bg-blue-300 py-5 sm:py-4 px-2 sm:px-2 flex flex-col space-y-1 items-center cursor-pointer rounded-md hover:bg-gray-900/80 hover:smooth-hover">
+                                    <div class="relative group bg-blue-800 py-5 sm:py-4 px-2 sm:px-2 flex flex-col space-y-1 items-center cursor-pointer rounded-md hover:bg-sky-800 hover:smooth-hover">
                                         <h2 class="flex justfy-between text-gray-500 text-lg font-semibold pb-1">
                                             
                                         </h2><span class=" flex justify-between py-2 px-8 bg-grey-lightest font-bold uppercase
-                                            text-l text-grey-light ">
+                                            text-l text-white ">
                                             <?= $categorie['nameCategory']; ?>
                                             <div class="flex">
                                                 <p class="px-4">id:<?= $categorie['idCategory']; ?>
@@ -117,7 +117,7 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/CategoryService.php
                                         </span>
                                         <div class="bg-gradient-to-r from-blue-300 to-blue-500 h-px mb-6"></div>
                                         <div class="flex">
-                                            <div class="my-1">
+                                            <div class="my-1 text-white">
                                                 <?= $categorie['description']; ?>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/CategoryService.php
                     <button type="submit" name="addCategory" class="bg-blue-800 text-white px-4 py-2 rounded">Add
                         Category</button>
                     <button type="button" id="closeAddModal"
-                        class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+                        class="bg-gray-800 text-white px-4 py-2 rounded">Cancel</button>
                 </form>
             </div>
         </div>
