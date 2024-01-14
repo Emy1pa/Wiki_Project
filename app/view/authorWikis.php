@@ -133,6 +133,10 @@ session_start();
                         <label for="content" class="block text-sm font-semibold text-gray-600">Content:</label>
                         <input type="text" id="content" name="content" class="w-full p-2 border rounded">
                     </div>
+                    <div class="mb-4">
+                        <label for="Wikipic" class="block text-sm font-semibold text-gray-600">Wiki pic:</label>
+                        <input type="file" id="Wikipic" name="Wikipic" class="w-full p-2 border rounded">
+                    </div>
                     <div>
                     <label for="CategoryId" class="block text-sm font-semibold text-gray-600">Select Category:</label>
                     <select name="Category_Id"  class="w-full p-2 border rounded">
@@ -144,7 +148,6 @@ session_start();
                         }
                         ?>
                     </select>
-        <br> <br> 
 
         <div>     
          <?php
