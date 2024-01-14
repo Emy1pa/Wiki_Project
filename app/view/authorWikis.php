@@ -64,7 +64,7 @@ session_start();
                     $loggedInUserWiki->setIduser($loggedInUserId);
                     $Wikis = $WikiService->displayonly($loggedInUserWiki);
                     foreach ($Wikis as $Wiki): ?>
-                         <div class="flex-1  p-4  min-w-md max-w-md">
+                         <div class="flex-1 p-4 m-4 min-w-md max-w-md">
                             <div class="mt-8">
                             <div class="flex flex-wrap space-x-0 space-y-2 md:space-x-4 md:space-y-0">
                                     <div class="relative group bg-cyan-500 py-5	 sm:py-4 px-2 sm:px-2 flex flex-col space-y-1 items-center cursor-pointer rounded-md hover:bg-cyan-900 hover:smooth-hover">
