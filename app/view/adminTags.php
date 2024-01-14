@@ -45,10 +45,7 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/wikie/app/service/TagService.php");
                                 d="M8 8v1h4V8m4 7H4a1 1 0 0 1-1-1V5h14v9a1 1 0 0 1-1 1ZM2 1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
                         </svg></a>
                 </button>
-        <a class="text-white p-4 inline-flex justify-center " href=" /wikie/public/login.php">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
+        <a class="text-white p-4 inline-flex justify-center " href=" /wikie/public/login.php">Log out
         </a>
         
       </div>
